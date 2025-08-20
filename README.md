@@ -73,7 +73,7 @@ A fully functional Linux command-line interface implemented in C!
   
   **Usage:** `wc [file]`
   
-  **Description:** Counts words, characters, and newlines in `[file]` or standard input.
+  **Description:** Counts words, characters, and newlines in `[file]` or standard input if no file is provided.
 
 - **`exit`**
   
