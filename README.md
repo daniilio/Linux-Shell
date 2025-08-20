@@ -106,7 +106,7 @@ A fully functional Linux command-line interface implemented in C!
   **Usage:** `start-client [port number] [hostname]`
   
   **Description:** Starts a client that can send multiple messages to `[hostname]` at `[port number]`. The client is connected once and can continue
-  sending messages until pressing CTRL+D or CTRL+C.
+  sending messages until pressing `CTRL+D` or `CTRL+C`.
 
 ## Environment Variable Usage
 
