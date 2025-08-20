@@ -33,7 +33,7 @@ A fully functional Linux command-line interface implemented in C!
   
   **Usage:** `ps`
   
-  **Description:** Lists process names and IDs for all background processes launched by the shell.- **`|`**
+  **Description:** Lists process names and IDs for all background processes launched by the shell.
 
 - **`kill`**
   
