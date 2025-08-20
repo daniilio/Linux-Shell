@@ -39,7 +39,7 @@ A fully functional Linux command-line interface implemented in C!
   
   **Usage:** `kill [pid] [signal number]`
   
-  **Description:** Sends signal `[signal number]` to a process with PID `pid`. Defaults to SIGTERM if no signal is specified.
+  **Description:** Sends signal `[signal number]` to a process with PID `pid`. Defaults to `SIGTERM` if no signal is specified.
 
 - **`cd`**
   
