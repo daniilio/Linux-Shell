@@ -6,6 +6,7 @@ A fully functional Linux command-line interface implemented in C!
 ⚠️ **NOTE:** Not all files in this project are included, as some starter code was provided as part of a class assignment I do not hold the copyright to.
 
 ## Overview of Features
+
 - Custom implementations of **built-in commands** such as `ps`, `kill`, `cd`, `ls`, `echo`, `cat`, `wc`, and `exit`.
 - TCP **chat server** capable of handling multiple clients simultaneously.
 - TCP **chat client** that communicates with a chat server.
