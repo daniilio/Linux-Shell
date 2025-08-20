@@ -61,7 +61,7 @@ A fully functional Linux command-line interface implemented in C!
   
   **Usage:** `echo [string]`
   
-  **Description:** Outputs the `[string]` component to standard output (stdout).
+  **Description:** Outputs the `[string]` component to standard output.
 
 - **`cat`**
   
