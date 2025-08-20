@@ -21,26 +21,26 @@ A fully functional Linux command-line interface implemented in C!
   backdirectory shortcuts using multiple dots, e.g., `..`, `...`, `....`, to navigate up multiple levels.
 
 - **`ls`**  
-  **Usage:** `ls [path] [flags]`  
+  **Usage:** `ls [path] [flags]`
   **Description:** Lists the contents of `[path]`, or the current directory if no path is provided. Supports flags such as:
   - `--f [substring]`: Only display entries containing `[substring]`.
   - `--rec`: Perform recursive listing.
   - `--d [depth]`: Limit recursion to `[depth]` levels.
 
 - **`echo`**  
-  **Usage:** `echo [string]`  
+  **Usage:** `echo [string]`
   **Description:** Outputs the `[string]` component to standard output (stdout).
 
 - **`cat`**  
-  **Usage:** `cat [file]`  
+  **Usage:** `cat [file]`
   **Description:** Displays the contents of `[file]` or standard input if no file is provided.
 
 - **`wc`**  
-  **Usage:** `wc [file]`  
+  **Usage:** `wc [file]`
   **Description:** Counts words, characters, and newlines in `[file]` or standard input.
 
 - **`kill`**  
-  **Usage:** `kill [pid] [signal number]`  
+  **Usage:** `kill [pid] [signal number]`
   **Description:** Sends signal `[signal number]` to a process with PID `pid`. Defaults to SIGTERM if no signal is specified.
 
 - **`exit`**
@@ -52,7 +52,7 @@ A fully functional Linux command-line interface implemented in C!
   **Description:** Runs the command in the background, listing a job number and process ID. Notifies the user when the command completes.
 
 - **`ps`**  
-  **Usage:** `ps`  
+  **Usage:** `ps`
   **Description:** Lists process names and IDs for all background processes launched by the shell.
 
 ## Server & Client Usage
@@ -77,4 +77,4 @@ A fully functional Linux command-line interface implemented in C!
 
 ## Signals Usage
 - **`SIGINT`**
-  The `SIGINT` signal is ignored by the shell program.
+  **Description:** The `SIGINT` signal is ignored by the shell program.
