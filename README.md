@@ -1,5 +1,5 @@
 # Linux-Shell
-A fully functional Linux command-line interface implemented in C!
+A custom Linux command-line interface implemented in C!
 
 ---
 
