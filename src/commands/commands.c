@@ -75,7 +75,9 @@ ssize_t cmd_echo(char **tokens)
 static int _digits_only(const char *s) 
 {
     while (*s) {
-        if (isdigit(*s++) == 0) return 0;
+        if (isdigit(*s++) == 0) {
+            return 0;
+        }
     }
     return 1;
 }
@@ -551,7 +553,7 @@ ssize_t cmd_kill(char **tokens)
  * @note Only processes with a valid PID (not -1) are displayed. Output is printed as 
  * "<command> <pid>".
  */
-ssize_t cmd_ps(int *process_arr, char **process_name_arr) 
+ssize_t cmd_ps(int *process_arr, char process_name_arr[][MAX_STR_LEN]) 
 {
     char msg[1024] = {'\0'};
     char cmd_name[512];

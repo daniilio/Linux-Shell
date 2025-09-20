@@ -31,7 +31,7 @@
 static void _clean_exit(struct listen_sock s, struct client_sock *clients, int server_fd);
 static int _fd_close(int fd);
 static int _accept_connection(int fd, struct client_sock **clients, struct client_sock **newclient);
-static void _remove_client(int *client_count, int client_fd, int *all_fds);
+static void _remove_client(int *client_count, int client_fd, fd_set *all_fds);
 static ssize_t _send_client_id(int *client_id, int *client_count, struct client_sock *new_client);
 static ssize_t _parse_port_num(char **tokens, int *server_port, int server_fd);
 static int _server_commands(struct client_sock *clients, char *msg, int data_len, int client_count);
@@ -113,7 +113,7 @@ ssize_t server(char **tokens, int server_fd)
                 exit_status = -1;
                 break;
             } else if (ret == 1) {
-                _remove_client(client_count, client_fd, &all_fds);
+                _remove_client(&client_count, client_fd, &all_fds);
                 continue;
             }
         }
@@ -244,7 +244,7 @@ static int _accept_connection(int fd, struct client_sock **clients, struct clien
  * @param client_fd File descriptor of the client to be removed.
  * @param all_fds Pointer to the fd_set used by select() for tracking active client sockets.
  */
-static void _remove_client(int *client_count, int client_fd, int *all_fds)
+static void _remove_client(int *client_count, int client_fd, fd_set *all_fds)
 {
     *client_count -= 1;
     FD_CLR(client_fd, all_fds);

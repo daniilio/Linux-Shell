@@ -88,7 +88,6 @@ ssize_t client(char **tokens)
 
         // read user entered messages and send to the server
         if ( FD_ISSET(STDIN_FILENO, &fdset) ) {
-            char msg_buf[BUF_SIZE];
             int write_len;
             if (_read_user_input(s, write_buf, prepend_len, &write_len) == 1) {
                 return 0;

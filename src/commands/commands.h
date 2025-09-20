@@ -14,6 +14,8 @@
 
 #include <unistd.h>
 
+#include "io_helpers.h"
+
 #define MAX_FILE_NAME 512
 // provide large buffer for handling directory expansions  (e.g., ..., ....)
 #define MAX_BACK_PATH 512
@@ -120,6 +122,6 @@ ssize_t cmd_kill(char **tokens);
  * @note Only processes with a valid PID (not -1) are displayed. Output is printed as 
  * "<command> <pid>".
  */
-ssize_t cmd_ps(int *process_arr, char **process_name_arr);
+ssize_t cmd_ps(int *process_arr, char process_name_arr[][MAX_STR_LEN]);
 
 #endif

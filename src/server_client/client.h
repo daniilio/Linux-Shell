@@ -9,8 +9,8 @@
  * 
  */
 
-#ifndef __SERVER_H__
-#define __SERVER_H__
+#ifndef __CLIENT_H__
+#define __CLIENT_H__
 
 #include <sys/types.h> 
 
