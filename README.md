@@ -1,10 +1,6 @@
 # Linux-Shell
 A custom Linux command-line interface implemented in C!
 
----
-
-⚠️ **NOTE:** Not all files in this project are included, as some starter code was provided as part of a class assignment I do not hold the copyright to.
-
 ## Overview of Features
 
 - Custom implementations of **built-in commands** such as `ps`, `kill`, `cd`, `ls`, `echo`, `cat`, `wc`, and `exit`.
